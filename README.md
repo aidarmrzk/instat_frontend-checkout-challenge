@@ -17,6 +17,7 @@ git clone https://github.com/instatdigital/frontend-checkout-challenge.git
 cd frontend-checkout-challenge
 npm ci
 npm run dev
+npm run dev:web
 ```
 
 Swagger: [http://localhost:4000/docs/](http://localhost:4000/docs/). Спецификация: [http://localhost:4000/openapi.json](http://localhost:4000/openapi.json) или [файл в репозитории](docs/openapi.json).
@@ -33,7 +34,11 @@ docs/                 задание и документация
 scripts/              проверки
 ```
 
-Проект использует npm workspaces. Приложение в `apps/web` назовите `@checkout/web`. Добавьте команды запуска фронтенда в README своего решения. Пока его нет, `npm run dev` запускает только API.
+Проект использует npm workspaces. Приложение в `apps/web` называется `@checkout/web`.
+
+- `npm run dev` или `npm run dev:api` — запуск API
+- `npm run dev:web` — запуск фронтенда
+- `npm run build:web` — сборка фронтенда
 
 ## Проверки
 
